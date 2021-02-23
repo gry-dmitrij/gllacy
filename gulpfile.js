@@ -40,7 +40,19 @@ exports.styles = styles;
 function images() {
 	return src('app/img_src/**/*') // берем все изображения из этой папки
 		.pipe(newer('app/img/')) // проверяем, было ли сжато ранее
-		.pipe(imagemin({verbose: true}))	// сжимаем и оптимизируем
+		.pipe(imagemin([
+		    imagemin.gifsicle(),
+		    imagemin.mozjpeg(),
+		    imagemin.optipng(),
+		    imagemin.svgo({
+		        plugins: [
+		            {removeViewBox: false},
+		            {cleanupIDs: false},
+		        ]
+		    })
+			],{
+		    	verbose: true,
+			}))				// сжимаем и оптимизируем
 		.pipe(dest('app/img/')) // выгружаем оптимизированные изображения
 }
 

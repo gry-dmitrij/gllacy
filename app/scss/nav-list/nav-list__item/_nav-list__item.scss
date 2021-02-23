@@ -1,0 +1,8 @@
+.nav-list__item{
+  margin-right: 28px;
+  position: relative;
+}
+
+.nav-list__item:hover .nav-list__sublist{
+  display: block;
+}

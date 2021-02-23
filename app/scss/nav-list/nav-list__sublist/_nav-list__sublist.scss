@@ -1,0 +1,9 @@
+.nav-list__sublist{
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: -10px;
+  &:hover{
+    display: block;
+  }
+}
