@@ -6,11 +6,13 @@
   & > a{
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-flow: column;
     padding: .5625em .875em .625em;
     border-radius: 1em;
     color: #fff;
     text-decoration: none;
+    text-align: center;
     &:after{
       content: '';
       display: block;

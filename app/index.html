@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/style.min.css">
+  <script type="text/javascript" src="js/svgxuse.js" defer></script>
 	<title>Gllacy</title>
 </head>
 <body class="page_1">
@@ -35,16 +36,27 @@
         <a href="#">Доставка и оплата</a>
       </li>
       <li class="nav-list__item main-nav-item">
-        <a href="#">О Компании</a>
+        <a href="#">О&nbsp;Компании</a>
       </li>
     </ul>
   </nav>
   <ul class="interface-box">
-    <li class="search-icon">
+    <li class="user-icon user-icon_search">
+      <svg height="20" width="20">
+        <use href="img/sprite/icon-sprite.svg#loupe">
+      </svg>
       <span class="visually-hidden">Поиск</span>
     </li>
-    <li class="login-icon">Вход</li>
-    <li class="cart-icon">
+    <li class="user-icon user-icon_login">
+      <svg height="20" width="20">
+        <use href="img/sprite/icon-sprite.svg#login">
+      </svg>
+      <span>Вход</span>
+    </li>
+    <li class="user-icon user-icon_basket">
+      <svg height="20" width="20">
+        <use href="img/sprite/icon-sprite.svg#basket">
+      </svg>
       <span class="visually-hidden">Корзина</span>Пусто
     </li>
   </ul>
