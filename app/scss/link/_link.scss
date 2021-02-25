@@ -1,0 +1,23 @@
+.link{
+  position: relative;
+  font-weight: 500;
+  text-decoration: none;
+  &:after{
+    content: '';
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    top: calc(100% - 1px);
+    left: 0;
+    opacity: 0.2;
+    background-color: currentColor;
+  }
+}
+
+.link_dark{
+  color: $font-color-dark;
+  &:hover,
+  &:active{
+    color: #e84d37;
+  }
+}

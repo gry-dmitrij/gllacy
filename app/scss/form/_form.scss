@@ -1,0 +1,18 @@
+.form{
+  background-color: $light-bg-color;
+  box-shadow: $general-shadow;
+  border-radius: 5px;
+}
+
+.form_search{
+  padding: 15px 20px;
+  min-width: 340px;
+}
+
+.form_login{
+  padding: 20px 18px;
+  min-width: 277px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}

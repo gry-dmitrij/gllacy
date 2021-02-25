@@ -1,0 +1,8 @@
+.nav-sublist__item{
+  &:first-child{
+    border-radius: $sublist-radius $sublist-radius 0 0;
+  }
+  &:last-child{
+    border-radius: 0 0 $sublist-radius $sublist-radius;
+  }
+}

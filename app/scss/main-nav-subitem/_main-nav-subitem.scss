@@ -1,33 +1,21 @@
 .main-nav-subitem{
-  background-color: #f8f7f4;
+  padding: 0.64em 1.43em;
   font-size: 0.875em;
+  line-height: 1.14em;
   &:first-child{
-    border-radius: 10px 10px 0 0;
-    & > a{
-      padding-top: 1em;
-    }
+    padding-top: 1em;
   }
   &:last-child{
-    border-radius: 0 0 10px 10px;
-    & > a{
-      padding-bottom: 1em;
-    }
+    padding-bottom: 1em;
   }
   &:hover{
     background-color: #fbded7;
-    & > a{
-      color: $font-color-dark;
-    }
   }
   &:active{
     background-color: #f6b5a5;
-     & > a{
-      color: $font-color-dark;
-    }
   }
   & > a{
     display: block;
-    padding: 0.64em 1.43em;
     color: $font-color-dark;
     white-space: nowrap;
     text-decoration: none;
@@ -43,11 +31,15 @@
 }
 
 .main-nav-subitem_important{
-  font-weight: bold;
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 1.214em;
   &:after{
     content: '';
     display: block;
-    margin: auto;
+    position: absolute;
+    left: 5%;
+    top: calc(100% - 3px);
     height: 1px;
     width: 90%;
     background-color: #353535;

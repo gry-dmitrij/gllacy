@@ -1,0 +1,37 @@
+.form-edit{
+  $margin-bottom: 20px;
+  padding: 9px 15px;
+  width: 100%;
+  margin: 1px 0 ($margin-bottom + 1px);
+  box-sizing: border-box;
+  font-size: .875em;
+  line-height: 1.714;
+  outline: none;
+  border: 1px solid rgba(178, 178, 178, .52);
+  border-radius: 5px;
+  color: $font-color-dark;
+  font-weight: 700;
+  &:last-child{
+    margin: 1px 0;
+    &:hover,
+    &:focus{
+      margin: 0;
+    }
+  }
+  &:hover{
+    border: 2px solid rgba(154, 154, 154, .52);
+    margin: 0 0 $margin-bottom;
+  }
+  &:focus{
+    border: 2px solid rgba(46, 136, 228, .52);
+    margin: 0 0 $margin-bottom;
+  }
+  &:-ms-input-placeholder{
+    color: #999;
+    font-weight: normal;
+  }
+  &::placeholder{
+    color: #999;
+    font-weight: normal;
+  }
+}

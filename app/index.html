@@ -4,7 +4,6 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/style.min.css">
-  <script type="text/javascript" src="js/svgxuse.js" defer></script>
 	<title>Gllacy</title>
 </head>
 <body class="page_1">
@@ -14,23 +13,25 @@
     <ul class="nav-list">
       <li class="nav-list__item main-nav-item">
         <a href="#">Каталог</a>
-        <ul class="nav-list__sublist nav-sublist">
-          <li class="nav-sublist__item main-nav-subitem main-nav-subitem_important">
-            <a href="#">Новинки</a>
-          </li>
-          <li class="nav-sublist__item main-nav-subitem">
-            <a href="#">Сливочное</a>
-          </li>
-          <li class="nav-sublist__item main-nav-subitem">
-            <a href="#">Щербеты</a>
-          </li>
-          <li class="nav-sublist__item main-nav-subitem">
-            <a href="#">Фруктовый лед</a>
-          </li>
-          <li class="nav-sublist__item main-nav-subitem">
-            <a href="#">Мелорин</a>
-          </li>
-        </ul>
+        <div class="hover-visible nav-list__sublist">
+          <ul class="nav-sublist">
+            <li class="nav-sublist__item main-nav-subitem main-nav-subitem_important">
+              <a href="#">Новинки</a>
+            </li>
+            <li class="nav-sublist__item main-nav-subitem">
+              <a href="#">Сливочное</a>
+            </li>
+            <li class="nav-sublist__item main-nav-subitem">
+              <a href="#">Щербеты</a>
+            </li>
+            <li class="nav-sublist__item main-nav-subitem">
+              <a href="#">Фруктовый лед</a>
+            </li>
+            <li class="nav-sublist__item main-nav-subitem">
+              <a href="#">Мелорин</a>
+            </li>
+          </ul>
+        </div>
       </li>
       <li class="nav-list__item main-nav-item">
         <a href="#">Доставка и оплата</a>
@@ -46,12 +47,28 @@
         <use href="img/sprite/icon-sprite.svg#loupe">
       </svg>
       <span class="visually-hidden">Поиск</span>
+      <div class="hover-visible interface-box__form">
+        <form class="form form_search" action="#">
+          <input class="form-edit" type="text" placeholder="Что">
+        </form>
+      </div>
     </li>
     <li class="user-icon user-icon_login">
       <svg height="20" width="20">
         <use href="img/sprite/icon-sprite.svg#login">
       </svg>
       <span>Вход</span>
+      <div class="hover-visible interface-box__form">
+        <form class="form form_login" action="#">
+          <input class="form-edit" type="text" placeholder="Электронная почта" required>
+          <input class="form-edit" type="password" placeholder="Пароль" required>
+          <input class="button" type="submit" tabindex="-1" value="Войти">
+          <div class="form__wrap-link">
+            <a href="#" class="link link_dark form__link">Забыли пароль?</a>
+            <a href="#" class="link link_dark">Новая регистрация</a>
+          </div>
+        </form>
+      </div>
     </li>
     <li class="user-icon user-icon_basket">
       <svg height="20" width="20">
@@ -174,5 +191,13 @@
   </ul>
   <p class="footer-copyright">Сделано в HTML Academy &copy; 2017</p>
 </footer>
+<script>
+    //only for IE
+    if(/MSIE \d|Trident.*rv/.test(navigator.userAgent)){
+      document.write('<script type="text\/javascript" src="js\/svgxuse.js" defer><\/script>');
+    }
+  </script>
+  <!-- Если браузер не поддерживает :focus-within -->
+  <script src="js/focus-within-polyfill.js"></script>
 </body>
 </html>

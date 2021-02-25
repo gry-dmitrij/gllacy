@@ -1,4 +1,7 @@
+$sublist-radius: 5px;
 .nav-sublist{
   list-style: none;
-  padding: 5px;
+  background-color: $light-bg-color;
+  border-radius: $sublist-radius;
+  box-shadow: $general-shadow;
 }

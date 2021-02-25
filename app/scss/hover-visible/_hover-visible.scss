@@ -1,0 +1,18 @@
+.hover-visible{
+  display: none;
+  &:hover,
+  &:focus-within
+  {
+    display: block;
+  }
+  &.focus-within{
+    //Для IE, работает с плагином focus-within-polyfill.js
+    //запись отделена от &:focus-within специально.
+    //иначе в IE не работает
+    display: block;
+  }
+}
+
+*:hover > .hover-visible{
+  display: block;
+}
