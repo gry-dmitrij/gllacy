@@ -1,0 +1,9 @@
+.hover-sibling{
+  &:hover ~ .hover-visible,
+  &:focus ~ .hover-visible{
+    // display: block;
+    // visibility: visible;
+    z-index: 1;
+    opacity: 1;
+  }
+}

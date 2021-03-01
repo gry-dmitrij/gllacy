@@ -1,18 +1,18 @@
+@import "functions/**/*.scss";
 @import "general/**/*.scss";
 @import "fonts/_font.scss";
 
-@import "button/_button.scss";
-@import "form-edit/**/*.scss";
+@import "button/**/*.scss";
+@import "cart/**/*.scss";
 @import "form/**/*.scss";
-@import "hover-visible/**/*.scss";
+@import "header-text/**/*.scss";
+@import "hover/**/*.scss";
 @import "interface-box/**/*.scss";
 @import "link/**/*.scss";
 @import "logo/**/*.scss";
-@import "main-nav/*.scss";
-@import "main-nav-item/_main-nav-item.scss";
-@import "main-nav-subitem/**/*.scss";
-@import "nav-list/**/*.scss";
-@import "nav-sublist/*.scss";   //важен порядок, поэтому с 1-ой звездочкой
-@import "nav-sublist/*/*.scss"; //важен порядок, поэтому с 1-ой звездочкой
+@import "main/**/*.scss";
+@import "nav/-list/**/*.scss";
+@import "nav/-sublist/*.scss";   //важен порядок, поэтому с 1-ой звездочкой
+@import "nav/-sublist/*/*.scss"; //важен порядок, поэтому с 1-ой звездочкой
 @import "page-header/**/*.scss";
 @import "user-icon/**/*.scss";

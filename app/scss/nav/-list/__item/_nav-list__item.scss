@@ -1,6 +1,9 @@
 .nav-list__item{
-  margin-right: 28px;
+  //margin-right: 28px;
   position: relative;
+  &:last-child{
+    margin-right: 0;
+  }
 }
 
 .nav-list__item:hover .nav-list__sublist{

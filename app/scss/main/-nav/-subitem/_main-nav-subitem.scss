@@ -1,0 +1,45 @@
+.main-nav-subitem{
+  padding: 0.64em 1.43em;
+  font-size: 0.875em;
+  line-height: 1.14em;
+  &:first-child{
+    padding-top: 1em;
+  }
+  &:last-child{
+    padding-bottom: 1em;
+  }
+  &:hover{
+    background-color: #fbded7;
+  }
+  &:active{
+    background-color: #f6b5a5;
+  }
+  & > a{
+    color: $font-color-dark;
+    white-space: nowrap;
+    text-decoration: none;
+  }
+  &_active{
+    background-color: #d07058;
+    color: #fff;
+    & > a{
+      color: #fff;
+    }
+  }
+  &_important{
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 1.214em;
+    &:after{
+      content: '';
+      display: block;
+      position: absolute;
+      left: 5%;
+      top: calc(100% - 3px);
+      height: 1px;
+      width: 90%;
+      background-color: #353535;
+      opacity: 0.2;
+    }
+  }
+}

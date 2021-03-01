@@ -1,8 +1,8 @@
 .form-edit{
-  $margin-bottom: 20px;
-  padding: 9px 15px;
+  $padding: 9px 15px;
+  padding: $padding;
   width: 100%;
-  margin: 1px 0 ($margin-bottom + 1px);
+  margin: 0 0 20px;
   box-sizing: border-box;
   font-size: .875em;
   line-height: 1.714;
@@ -12,19 +12,18 @@
   color: $font-color-dark;
   font-weight: 700;
   &:last-child{
-    margin: 1px 0;
-    &:hover,
-    &:focus{
-      margin: 0;
-    }
+    margin: 0;
+  }
+  &:hover,
+  &:focus{
+    border: 2px solid;
+    padding: list-add-val($padding, -1px);
   }
   &:hover{
-    border: 2px solid rgba(154, 154, 154, .52);
-    margin: 0 0 $margin-bottom;
+    border-color: rgba(154, 154, 154, .52);
   }
   &:focus{
-    border: 2px solid rgba(46, 136, 228, .52);
-    margin: 0 0 $margin-bottom;
+    border-color: rgba(46, 136, 228, .52);
   }
   &:-ms-input-placeholder{
     color: #999;
