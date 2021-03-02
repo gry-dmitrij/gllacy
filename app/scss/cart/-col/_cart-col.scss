@@ -1,15 +1,28 @@
 .cart-col{
-  padding: 0 15px;
+  padding: 9px 15px 0;
+  vertical-align: baseline;
 }
 
 .cart-col_img{
   padding: 0;
+  vertical-align: middle;
 }
 
 .cart-col_button{
-  padding: 0 6px;
+  padding: 10px 6px 0;
+  vertical-align: top;
 }
 
 .cart-col_name{
-  width: 216px;
+  width: 220px;
+  padding-right: 12px;
+  padding-left: 10px;
+}
+
+tr:not(:first-child) > .cart-col{
+  padding-top: 27px;
+}
+
+tr:not(:first-child) > .cart-col_img{
+  padding-top: 13px;
 }
