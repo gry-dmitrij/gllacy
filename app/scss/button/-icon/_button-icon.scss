@@ -4,7 +4,7 @@
   display: block;
   position: relative;
   border: none;
-  outline: none;
+  // outline: none;
   background: transparent;
   &:before,
   &:after{
@@ -36,5 +36,7 @@
       left: 1px;
     }
   }
-
+  &_no-focus{
+    outline: none;
+  }
 }

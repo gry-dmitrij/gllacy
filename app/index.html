@@ -89,7 +89,8 @@
           <table class="cart-table">
             <tr>
               <td class="cart-col cart-col_button">
-                <button class="button-icon"></button>
+                <!-- TODO: Перетащить потом js в отдельный файл -->
+                <button class="button-icon" type="button" onmousedown="this.classList.add('button-icon_no-focus');" onmouseup="this.blur();this.classList.remove('button-icon_no-focus');"></button>
               </td>
               <td class="cart-col cart-col_img">
                 <img src="img/product/plombir-orange-mini.png" alt="" class="cart-img" width="33" height="33">
@@ -108,7 +109,7 @@
             </tr>
             <tr>
               <td class="cart-col cart-col_button">
-                <button class="button-icon"></button>
+                <button class="button-icon" type="button"></button>
               </td>
               <td class="cart-col cart-col_img">
                 <img src="img/product/plombir-strawberry-mini.png" alt="" class="cart-img" width="33" height="33">
@@ -126,6 +127,10 @@
               </td>
             </tr>
           </table>
+          <div class="cart-item-box">
+            <span class="cart-text cart-text_big cart__item">Итого: 750 руб.</span>
+            <button class="button">Оформить заказ</button>
+          </div>
         </form>
       </div>
     </li>
