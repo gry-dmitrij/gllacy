@@ -5,6 +5,7 @@
 @import "button/**/*.scss";
 @import "cart/**/*.scss";
 @import "caption/**/*.scss";
+@import "edit/**/*.scss";
 @import "form/**/*.scss";
 @import "header-text/**/*.scss";
 @import "hover/**/*.scss";
@@ -14,9 +15,11 @@
 @import "link/**/*.scss";
 @import "logo/**/*.scss";
 @import "main/**/*.scss";
-@import "nav/-list/**/*.scss";
-@import "nav/-sublist/*.scss";   //важен порядок, поэтому с 1-ой звездочкой
-@import "nav/-sublist/*/*.scss"; //важен порядок, поэтому с 1-ой звездочкой
+@import "nav/__list/**/*.scss";
+@import "nav/__item/**/*.scss";
+@import "nav/__sublist-box/**/*.scss";
+@import "nav/__sublist/**/*.scss"; //важен порядок, поэтому вводим все папки
+@import "nav/__subitem/**/*.scss"; //важен порядок, поэтому вводим все папки
 @import "page-header/**/*.scss";
 @import "slider/**/*.scss";
 @import "user-icon/**/*.scss";
