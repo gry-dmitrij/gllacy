@@ -1,0 +1,18 @@
+.indicator{
+  width: 20px;
+  height: 20px;
+
+  flex: 0;
+
+  border: 1px solid #fff;
+  border-radius: 50%;
+  color: transparent;
+
+  &:hover{
+    background-color: rgba(248, 247, 244, .4);
+  }
+  &:active,
+  input[type=radio]:checked + &{
+    background-color: #fff;
+  }
+}

@@ -4,9 +4,12 @@
 
 @import "button/**/*.scss";
 @import "cart/**/*.scss";
+@import "caption/**/*.scss";
 @import "form/**/*.scss";
 @import "header-text/**/*.scss";
 @import "hover/**/*.scss";
+@import "indicator/**/*.scss";
+@import "indicators/**/*.scss";
 @import "interface-box/**/*.scss";
 @import "link/**/*.scss";
 @import "logo/**/*.scss";
@@ -15,4 +18,5 @@
 @import "nav/-sublist/*.scss";   //важен порядок, поэтому с 1-ой звездочкой
 @import "nav/-sublist/*/*.scss"; //важен порядок, поэтому с 1-ой звездочкой
 @import "page-header/**/*.scss";
+@import "slider/**/*.scss";
 @import "user-icon/**/*.scss";

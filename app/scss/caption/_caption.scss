@@ -1,0 +1,12 @@
+.caption{
+  font-weight: 700;
+  text-align: center;
+  &_light{
+    color: #fff;
+  }
+  &_offer{
+    max-width: 670px;
+    font-size: rem(60px, 16);
+    line-height: rem(60px, 16);
+  }
+}

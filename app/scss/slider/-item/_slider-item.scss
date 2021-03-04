@@ -1,0 +1,25 @@
+.slider-item{
+  width: 100%;
+  display: flex;
+  min-height: 535px;
+
+  position: absolute;
+  top: 0;
+  flex-flow: column;
+  align-items: center;
+  justify-content: flex-end;
+  opacity: 0;
+  img{
+    width: 647px;
+    height: 584px;
+
+    position: absolute;
+    top: 11px;
+
+    z-index: -1;
+  }
+  &_active{
+    position: relative;
+    opacity: 1;
+  }
+}

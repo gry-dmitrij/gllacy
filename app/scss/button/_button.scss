@@ -9,9 +9,11 @@
   $padding-top-bottom: 11px;
   min-width: 100px;
   padding: rem($padding-top-bottom, $base-local) 15px;
+
   font-size: rem($font-size, $base-local);
   line-height: rem($line-height, $base-local);
   font-weight: 700;
+
   background-image: linear-gradient(to top, #e74a35, #f26843);
   box-shadow: 0px 2px 2px 0 rgba(172, 16, 0, 0.64);
   text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
@@ -28,5 +30,14 @@
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07)), linear-gradient(to top, #e74a35, #f26843);
     box-shadow: inset 0px 2px 2px 0 #942718;
     color: #fceeec;
+  }
+  &_big{
+    padding-left: 40px;
+    padding-right: 40px;
+
+    font-size: rem($font-size * 1.78, $base-local);
+    line-height: rem($line-height * 1.83, $base-local);
+
+    border-radius: 30px;
   }
 }

@@ -9,7 +9,7 @@
 <body class="page page_1">
 <header class="page-header">
   <img class="logo-img page-header__logo" src="img/Logo.svg" width="154" height="64" alt="Логотип gllacy shop">
-  <nav class="main-nav">
+  <nav class="nav">
     <ul class="nav-list">
       <li class="nav-list__item main-nav-item">
         <a class="hover-sibling" href="#">Каталог</a>
@@ -144,16 +144,28 @@
   <section class="slider-box">
     <h2 class="visually-hidden">Главные предложения</h2>
     <ul class="slider">
-      <li class="slider-item">Крем-брюле и пломбир с малиновым джемом</li>
-      <li class="slider-item">Шоколадный пломбир и лимонный сорбет</li>
-      <li class="slider-item">Пломбир с помадкой и клубничный щербет</li>
+      <li class="slider-item slider-item_active">
+        <img src="img/product/main-product1.png" width="647" height="584" alt="Крем-брюле и пломбир с малиновым джемом">
+        <p class="caption caption_light caption_offer slider-box__caption">Крем-брюле и пломбир с малиновым джемом</p>
+      </li>
+      <li class="slider-item">
+        <img src="#" alt="Шоколадный пломбир и лимонный сорбет">
+        <p>Шоколадный пломбир и лимонный сорбет</p>
+      </li>
+      <li class="slider-item">
+        <img src="#" alt="Пломбир с помадкой и клубничный щербет">
+        <p>Пломбир с помадкой и клубничный щербет</p>
+      </li>
     </ul>
-    <ol class="slider-indicators">
-      <li class="active"></li>
-      <li></li>
-      <li></li>
-    </ol>
-    <button class="btn btn_big">Давайте оба!</button>
+    <form id="offer-form" class="indicators slider-box__indicators" action="#" method="post">
+      <input id="slider-number1" class="visually-hidden" name="slider-number" type="radio" value="N1" checked>
+      <label class="indicator indicators__item" for="slider-number1">Первый слайд</label>
+      <input id="slider-number2" class="visually-hidden" name="slider-number" type="radio" value="N2">
+      <label class="indicator indicators__item" for="slider-number2">Второй слайд</label>
+      <input id="slider-number3" class="visually-hidden" name="slider-number" type="radio" value="N3">
+      <label class="indicator indicators__item" for="slider-number3">Третий слайд</label>
+    </form>
+    <button form="offer-form" class="button button_big slider-box__button">Давайте оба!</button>
   </section>
   <section class="">
     <h2 class="visually-hidden">Специальные предложения</h2>
