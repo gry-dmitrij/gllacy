@@ -1,7 +1,8 @@
-.cart-table{
-  min-width: 510px;
-  margin-bottom: 30px;
+.table{
   border-collapse: collapse;
+}
+
+.table_form{
   position: relative;
   &:after{
     content: "";

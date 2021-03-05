@@ -1,13 +1,13 @@
 .cart-text{
-  font-size: 13px;
-  line-height: 16px;
-  color: #323232;
+  font-size: rem(13px, 16);
+  line-height: 1rem;
+  color: $font-color-dark;
   &_highlighted{
     color: #999;
   }
   &_big{
-    font-size: 15px;
-    line-height: 18px;
+    font-size: rem(15px, 16);
+    line-height: rem(18px, 16);
     font-weight: 700;
   }
 }

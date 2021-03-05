@@ -1,0 +1,25 @@
+.table__col{
+  padding: 9px 15px 0;
+  vertical-align: baseline;
+  &_img{
+    padding: 0;
+    vertical-align: middle;
+  }
+  &_button{
+    padding: 10px 6px 0;
+    vertical-align: top;
+  }
+  &_name{
+    width: 220px;
+    padding-right: 12px;
+    padding-left: 10px;
+  }
+}
+
+:not(:first-child) > .table__col{
+  padding-top: 27px;
+}
+
+:not(:first-child) > .table__col_img{
+  padding-top: 13px;
+}
