@@ -1,5 +1,4 @@
 .hover-visible{
-  $visible-index: 2;
   // display: none;
   // visibility: hidden;
   opacity: 0;
@@ -9,7 +8,7 @@
   {
     // display: block;
     // visibility: visible;
-    z-index: $visible-index;
+    z-index: $hover-visible-index;
     opacity: 1;
   }
   &.focus-within{
@@ -18,7 +17,7 @@
     //иначе в IE не работает
     // display: block;
     // visibility: visible;
-    z-index: $visible-index;
+    z-index: $hover-visible-index;
     opacity: 1;
   }
 }

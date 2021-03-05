@@ -1,11 +1,10 @@
 .hover-parent{
-  $visible-index: 2;
   position: relative;
   &:hover > .hover-visible,
   &:focus > .hover-visible{
     // display: block;
     // visibility: visible;
-    z-index: $visible-index;
+    z-index: $hover-visible-index;
     opacity: 1;
   }
 }
