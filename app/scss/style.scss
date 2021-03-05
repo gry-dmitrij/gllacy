@@ -23,4 +23,6 @@
 @import "page-header/**/*.scss";
 @import "slider/**/*.scss";
 @import "table/**/*.scss";
+@import "text/*.scss";        //важен порядок
+@import "text/*/**/*.scss";   //важен порядок
 @import "user-icon/**/*.scss";

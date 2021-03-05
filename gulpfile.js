@@ -18,7 +18,8 @@ function browsersync() {
 	browserSync.init({ // Инициализация Browsersync
 		server: { baseDir: 'app/' }, // Указываем папку сервера
 		notify: false, // Отключаем уведомления
-		online: true // Режим работы: true или false
+		online: true, // Режим работы: true или false
+		host: "192.168.10.107",
 	})
 }
 
