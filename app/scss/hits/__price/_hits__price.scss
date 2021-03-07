@@ -1,0 +1,13 @@
+.hits__price{
+  display: block;
+
+  position: absolute;
+  top: -70px;
+  left: 0;
+
+  font-size: rem(45px, $base-font);
+  line-height: rem(45px, $base-font);
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 0.5px 0.9px 3px rgba(49, 50, 53, 0.5);
+}

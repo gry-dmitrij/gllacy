@@ -1,0 +1,6 @@
+.hits__button{
+  visibility: hidden;
+  .hits__item:hover > &{
+    visibility: visible;
+  }
+}

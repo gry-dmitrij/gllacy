@@ -1,0 +1,17 @@
+.hits__dimension{
+  padding-left: rem(34px, $base-font);
+  position: relative;
+
+  font-size: rem(30px, $base-font);
+  &:before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: rem(26px, $base-font);
+    height: rem(37px, $base-font);
+    left: 5px;
+    bottom: 5px;
+    fill: currentColor;
+    background: center / cover no-repeat url("../img/symbol/ruble.svg");
+  }
+}

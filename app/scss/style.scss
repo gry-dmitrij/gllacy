@@ -5,9 +5,11 @@
 @import "button/**/*.scss";
 @import "cart/**/*.scss";
 @import "caption/**/*.scss";
+@import "container/**/*.scss";
 @import "edit/**/*.scss";
 @import "form/**/*.scss";
 @import "header/**/*.scss";
+@import "hits/**/*.scss";
 @import "hover/**/*.scss";
 @import "indicator/**/*.scss";
 @import "indicators/**/*.scss";
@@ -20,8 +22,12 @@
 @import "nav/__sublist-box/**/*.scss";
 @import "nav/__sublist/**/*.scss"; //важен порядок, поэтому вводим все папки
 @import "nav/__subitem/**/*.scss"; //важен порядок, поэтому вводим все папки
+@import "page/*.scss";
+@import "page/*/**/*.scss";
 @import "page-header/**/*.scss";
 @import "slider/**/*.scss";
+@import "spec-offers/*.scss";
+@import "spec-offers/*/**/*.scss";
 @import "table/**/*.scss";
 @import "text/*.scss";        //важен порядок
 @import "text/*/**/*.scss";   //важен порядок

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="page" >
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -141,18 +141,18 @@
   </p>
 </header>
 <main>
-  <section class="slider-box">
+  <section class="slider-box page__item">
     <h2 class="visually-hidden">Главные предложения</h2>
     <ul class="slider">
-      <li class="slider-item slider-item_active">
+      <li class="slider__item slider__item_active">
         <img src="img/product/main-product1.png" width="647" height="584" alt="Крем-брюле и пломбир с малиновым джемом">
         <p class="caption caption_light caption_offer slider-box__caption">Крем-брюле и пломбир с малиновым джемом</p>
       </li>
-      <li class="slider-item">
+      <li class="slider__item">
         <img src="#" alt="Шоколадный пломбир и лимонный сорбет">
         <p>Шоколадный пломбир и лимонный сорбет</p>
       </li>
-      <li class="slider-item">
+      <li class="slider__item">
         <img src="#" alt="Пломбир с помадкой и клубничный щербет">
         <p>Пломбир с помадкой и клубничный щербет</p>
       </li>
@@ -167,47 +167,55 @@
     </form>
     <button form="offer-form" class="button button_big slider-box__button">Давайте оба!</button>
   </section>
-  <section class="">
+  <section class="container page__spec-offers">
     <h2 class="visually-hidden">Специальные предложения</h2>
     <ul class="spec-offers">
-      <li>
-        <h3 class="offer-header">Малинка даром!</h3>
-        <p class="offer-desc">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-        <button class="btn">Хочу варенье!</button>
+      <li class="spec-offers__item spec-offers__item_theme_raspberry">
+        <h3 class="spec-offers__header">Малинка даром!</h3>
+        <p class="spec-offers__desc">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+        <button class="button spec-offers__button">Хочу варенье!</button>
       </li>
-      <li>
-        <h3 class="offer-header">Шоколадки даром!</h3>
-        <p class="offer-desc">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-        <button class="btn">Хочу шоколадки!</button>
+      <li class="spec-offers__item spec-offers__item_theme_choco">
+        <h3 class="spec-offers__header">Шоколадки даром!</h3>
+        <p class="spec-offers__desc">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+        <button class="button spec-offers__button">Хочу шоколадки!</button>
       </li>
     </ul>
   </section>
-  <section>
+  <section class="page__item">
     <h2 class="visually-hidden">Хиты</h2>
     <ul class="hits">
-      <li class="hit-item">
-        <img class="hit-img" src="" alt="">
-        <span class="hit-price">310<span class="hit-dimension">/кг</span></span>
-        <p class="hit-desc">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
-        <button class="btn">Быстрый просмотр</button>
+      <li class="hits__item">
+        <img class="hits__img" src="img/product/creamy-orange-citrus.jpg" width="267" height="267" alt="">
+        <p class="hits__desc">
+          <span class="hits__price">310<span class="hits__dimension">/кг</span></span>
+          Сливочное с апельсиновым джемом и цитрусовой стружкой
+        </p>
+        <button class="button hits__button">Быстрый просмотр</button>
       </li>
-      <li class="hit-item">
-        <img class="hit-img" src="" alt="">
-        <span class="hit-price">380<span class="hit-dimension">/кг</span></span>
-        <p class="hit-desc">Сливочно-кофейное с кусочками шоколада</p>
-        <button class="btn">Быстрый просмотр</button>
+      <li class="hits__item">
+        <img class="hits__img" src="img/product/creamy-coffee-chocolate.jpg" width="267" height="267" alt="">
+        <p class="hits__desc">
+          <span class="hits__price">380<span class="hits__dimension">/кг</span></span>
+          Сливочно-кофейное с кусочками шоколада
+        </p>
+        <button class="button hits__button">Быстрый просмотр</button>
       </li>
-      <li class="hit-item">
-        <img class="hit-img" src="" alt="">
-        <span class="hit-price">355<span class="hit-dimension">/кг</span></span>
-        <p class="hit-desc">Сливочно-клубничное с присыпкой из белого шоколада</p>
-        <button class="btn">Быстрый просмотр</button>
+      <li class="hits__item">
+        <img class="hits__img" src="img/product/creamy-strawberry-white-chocolate.jpg" width="267" height="267" alt="">
+        <p class="hits__desc">
+          <span class="hits__price">355<span class="hits__dimension">/кг</span></span>
+          Сливочно-клубничное с присыпкой из белого шоколада
+        </p>
+        <button class="button hits__button">Быстрый просмотр</button>
       </li>
-      <li class="hit-item">
-        <img class="hit-img" src="" alt="">
-        <span class="hit-price">415<span class="hit-dimension">/кг</span></span>
-        <p class="hit-desc">Сливочное крем-брюле с карамельной подливкой</p>
-        <button class="btn">Быстрый просмотр</button>
+      <li class="hits__item">
+        <img class="hits__img" src="img/product/Creamy-brulee-caramel.jpg" width="267" height="267" alt="">
+        <p class="hits__desc">
+          <span class="hits__price">415<span class="hits__dimension">/кг</span></span>
+          Сливочное крем-брюле с карамельной подливкой
+        </p>
+        <button class="button hits__button">Быстрый просмотр</button>
       </li>
     </ul>
   </section>
