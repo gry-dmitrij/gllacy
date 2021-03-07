@@ -2,9 +2,28 @@ $font-color-dark: #323232;
 $light-bg-color: #f8f7f4;
 $general-shadow: 0 20px 20px 0 rgba(0, 0, 0, .4);
 
-//font size
-// задавать в пикселах
-$font-size-small: 14px;
-$line-height-small: 16px;
-$font-size-big: 22px;
-$line-height-big: 24px;
+
+//font
+$base-font: 16;   //rem относительно этого размера
+// основные шрифты
+$font-size_general: 16px;
+$line-height_general: 22px;
+$font-size_s: 13px;
+$line-height_s: 16px;
+$font-size_m: 15px;
+$line-height_m: 18px;
+// $font-size_l: ;
+// $line-height_l: ;
+// $font-size_xl: ;
+// $line-height_xl: ;
+// $font-size_2xl: ;
+// $line-height_2xl: ;
+// $font-size_3xl: ;
+// $line-height_3xl: ;
+// $font-size_4xl: ;
+// $line-height_4xl: ;
+// дополнительные шрифты
+$font_header_general: 14px;
+$line-height_header_general: 16px;
+$font_header_big: 22px;
+$line-height_header_big: 24px;

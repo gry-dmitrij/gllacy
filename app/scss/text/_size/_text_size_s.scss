@@ -1,4 +1,4 @@
 .text_size_s{
-  font-size: rem(13px, 16);
-  line-height: 1rem;
+  font-size: rem($font-size_s, $base-font);
+  line-height: rem($line-height_s, $base-font);
 }
