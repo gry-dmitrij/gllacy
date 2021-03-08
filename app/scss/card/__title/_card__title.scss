@@ -1,0 +1,13 @@
+.card__title{
+  margin-top: 7px;
+  max-width: 300px;
+  display: block;
+
+  &,
+  & *{
+    font-size: rem(24px, $base-font);
+    line-height: rem(30px, $base-font);
+    font-weight: 700;
+    color: $font-color-dark;
+  }
+}

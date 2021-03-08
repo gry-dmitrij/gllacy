@@ -1,3 +1,7 @@
 .form__link{
-  margin-bottom: 8px;
+  font-size: rem($font-size_s, $base-font);
+  line-height: rem(20px, $base-font);
+  &:last-child{
+    margin-bottom: 0;
+  }
 }

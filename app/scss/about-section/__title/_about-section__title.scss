@@ -1,0 +1,11 @@
+.about-section__title{
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 5px;
+
+  font-size: rem(24px, $base-font);
+  line-height: rem(30px, $base-font);
+  font-weight: 500;
+  color: $font-color-dark;
+}

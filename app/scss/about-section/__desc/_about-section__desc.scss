@@ -1,0 +1,25 @@
+.about-section__desc{
+  margin-bottom: 7px;
+  width: 49%;
+  box-sizing: border-box;
+
+  padding-left: 57px;
+  padding-top: 16px;
+  position: relative;
+
+  font-size: rem($font-size_general, $base-font);
+  line-height: rem($line-height_general, $base-font);
+  color: $font-color-dark;
+  & > svg{
+    content: "";
+    display: block;
+    width: 49px;
+    height: 49px;
+
+    position: absolute;
+    left: 0;
+    top: 2px;
+
+    fill: currentColor;
+  }
+}

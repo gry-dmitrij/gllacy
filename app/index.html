@@ -45,31 +45,31 @@
     <li class="user-icon user-icon_search hover-parent">
       <a>
         <svg height="20" width="20">
-          <use href="img/sprite/icon-sprite.svg#loupe">
+          <use href="img/sprite/icon-sprite.svg#loupe"></use>
         </svg>
         <span class="visually-hidden">Поиск</span>
       </a>
       <div class="hover-visible interface-box__form">
         <form class="form form_search" action="#">
-          <input class="edit" type="text" placeholder="Что">
+          <input class="edit form__edit" type="text" placeholder="Что">
         </form>
       </div>
     </li>
     <li class="user-icon user-icon_login hover-parent">
       <a>
         <svg height="20" width="20">
-          <use href="img/sprite/icon-sprite.svg#login">
+          <use href="img/sprite/icon-sprite.svg#login"></use>
         </svg>
         <span>Вход</span>
       </a>
       <div class="hover-visible interface-box__form">
         <form class="form form_login" action="#">
-          <input class="edit" type="text" placeholder="Электронная почта" required>
-          <input class="edit" type="password" placeholder="Пароль" required>
+          <input class="edit form__edit" type="text" placeholder="Электронная почта" required>
+          <input class="edit form__edit" type="password" placeholder="Пароль" required>
           <button class="button">Войти</button>
           <div class="form__wrap-link">
             <a href="#" class="link link_dark form__link">Забыли пароль?</a>
-            <a href="#" class="link link_dark">Новая регистрация</a>
+            <a href="#" class="link link_dark form__link">Новая регистрация</a>
           </div>
         </form>
       </div>
@@ -77,10 +77,10 @@
     <li class="user-icon user-icon_basket hover-parent">
       <a>
         <svg height="20" width="20">
-          <use href="img/sprite/icon-sprite.svg#basket-empty">
+          <use href="img/sprite/icon-sprite.svg#basket-empty"></use>
         </svg>
         <svg class="visually-hidden" height="20" width="20">
-          <use href="img/sprite/icon-sprite.svg#basket-full">
+          <use href="img/sprite/icon-sprite.svg#basket-full"></use>
         </svg>
         <span class="visually-hidden">Корзина</span>Пусто
       </a>
@@ -219,36 +219,54 @@
       </li>
     </ul>
   </section>
-  <section class="about-section">
-    <h2 class="about-title">
-      Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес
-    </h2>
-    <p class="about-desc about-desc_">
-      Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
-    </p>
-    <p class="about-desc about-desc_">
-      Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
-    </p>
-    <p class="about-desc about-desc_">
-      Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
-    </p>
-    <p class="about-desc about-desc_">
-      Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
-    </p>
-  </section>
-  <section>
-    <h2 class="visually-hidden">Блог</h2>
-    <div class="news">
-      <p class="news-desc">Новое в нашем блоге</p>
-      <h3 class="news-title">10 способов сервировки фруктовых щербетов к столу</h3>
-    </div>
-    <form class="subscription-box">
-      <p class="subscription-text">
-        Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
+  <div class="container page__item">
+    <section class="about-section page__about-section">
+      <h2 class="about-section__title">
+        Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес
+      </h2>
+      <p class="about-section__desc">
+        <svg>
+          <use href="img/sprite/icon-sprite.svg#ice-cream"></use>
+        </svg>
+        Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
       </p>
-      <input class="subscription-edit" type="text" placeholder="Электронная почта">
-      <button class="button">Отправить</button>
-    </form>
+      <p class="about-section__desc">
+        <svg>
+          <use href="img/sprite/icon-sprite.svg#cow"></use>
+        </svg>
+        Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
+      </p>
+       <p class="about-section__desc">
+        <svg>
+          <use href="img/sprite/icon-sprite.svg#leaf"></use>
+        </svg>
+        Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
+      </p>
+      <p class="about-section__desc">
+        <svg>
+          <use href="img/sprite/icon-sprite.svg#thermometer"></use>
+        </svg>
+        Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
+      </p>
+    </section>
+  </div>
+  <section class="container card-box">
+    <h2 class="visually-hidden">Блог</h2>
+    <div class="card card_news">
+      <p class="text">Новое в нашем блоге</p>
+      <a class="card__title" href="#">
+        <h3>10 способов сервировки фруктовых щербетов к столу</h3>
+      </a>
+    </div>
+    <div class="card card_subscription">
+      <form class="subscription-box">
+        <p class="subscription__text">
+          Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
+        </p>
+        <input class="edit subscription__edit" type="text" placeholder="Электронная почта">
+        <button class="button">Отправить</button>
+      </form>
+    </div>
   </section>
   <section class="map-box">
 

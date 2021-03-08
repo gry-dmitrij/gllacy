@@ -1,29 +1,27 @@
 .edit{
-  $padding: 9px 15px;
-  padding: $padding;
+  padding: 9px 15px;
   width: 100%;
-  margin: 0 0 20px;
   box-sizing: border-box;
   font-size: .875em;
   line-height: 1.714;
   outline: none;
-  border: 1px solid rgba(178, 178, 178, .52);
+  border: 1px solid transparent;
   border-radius: 5px;
+  box-shadow: 0 0 0 1px rgba(178, 178, 178, .52);
   color: $font-color-dark;
   font-weight: 700;
-  &:last-child{
-    margin: 0;
-  }
   &:hover,
   &:focus{
-    border: 2px solid;
-    padding: list-add-val($padding, -1px);
+    border-color: rgba(178, 178, 178, .52);
+    box-shadow: 0 0 0 1px rgba(178, 178, 178, .52);
   }
   &:hover{
     border-color: rgba(154, 154, 154, .52);
+    box-shadow: 0 0 0 1px rgba(154, 154, 154, .52);
   }
   &:focus{
     border-color: rgba(46, 136, 228, .52);
+    box-shadow: 0 0 0 1px rgba(46, 136, 228, .52);
   }
   &:-ms-input-placeholder{
     color: #999;
