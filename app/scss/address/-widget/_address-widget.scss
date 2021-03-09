@@ -1,0 +1,13 @@
+.address-widget{
+  max-width: 300px;
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: column;
+
+  padding: 26px 25px;
+  position: absolute;
+  right: 28px;
+
+  background: #fff;
+  border-radius: 10px;
+}
