@@ -1,0 +1,14 @@
+.products__item_hit{
+  &:after{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 60px;
+
+    position: absolute;
+    top: 6px;
+    left: 12px;
+
+    background: center / cover no-repeat url("../img/product/hit-icon.png");
+  }
+}
