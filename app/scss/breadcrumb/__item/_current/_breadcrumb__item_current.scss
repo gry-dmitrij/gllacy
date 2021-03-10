@@ -1,0 +1,8 @@
+.breadcrumb__item_current{
+  & a{
+    border: none;
+  }
+  &:after{
+    display: none;
+  }
+}

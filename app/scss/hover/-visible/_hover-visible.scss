@@ -3,21 +3,23 @@
   // visibility: hidden;
   opacity: 0;
   z-index: -1;
+  height: 0;
+  overflow: hidden;
   &:hover,
   &:focus-within
   {
-    // display: block;
-    // visibility: visible;
+    height: auto;
     z-index: $hover-visible-index;
     opacity: 1;
+    overflow: visible;
   }
   &.focus-within{
     //Для IE, работает с плагином focus-within-polyfill.js
     //запись отделена от &:focus-within специально.
     //иначе в IE не работает
-    // display: block;
-    // visibility: visible;
+    height: auto;
     z-index: $hover-visible-index;
     opacity: 1;
+    overflow: visible;
   }
 }

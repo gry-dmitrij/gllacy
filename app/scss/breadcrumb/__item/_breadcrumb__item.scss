@@ -1,0 +1,22 @@
+.breadcrumb__item{
+  margin-right: 8px;
+  padding-right: 15px;
+
+  position: relative;
+
+  & a{
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  &,
+  & *{
+    font-size: rem(14px, $base-font);
+    line-height: rem(16px, $base-font);
+    color: #fff;
+  }
+  &:after{
+    content: "»";
+    position: absolute;
+    right: 0;
+  }
+}

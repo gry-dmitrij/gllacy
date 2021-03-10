@@ -4,6 +4,7 @@
 
 @import "about-section/**/*.scss";
 @import "address/**/*.scss";
+@import "breadcrumb/**/*.scss";
 @import "button/**/*.scss";
 @import "card/**/*.scss";
 @import "cart/**/*.scss";
@@ -38,4 +39,5 @@
 @import "table/**/*.scss";
 @import "text/*.scss";        //важен порядок
 @import "text/*/**/*.scss";   //важен порядок
+@import "title/**/*.scss";
 @import "user-icon/**/*.scss";

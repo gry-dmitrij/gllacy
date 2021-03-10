@@ -2,10 +2,10 @@
   position: relative;
   &:hover > .hover-visible,
   &:focus > .hover-visible{
-    // display: block;
-    // visibility: visible;
+    height: auto;
     z-index: $hover-visible-index;
     opacity: 1;
+    overflow: visible;
   }
 }
 

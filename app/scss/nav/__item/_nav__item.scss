@@ -43,5 +43,10 @@
           display: none;
         }
     }
+    &:hover > a,
+    &:active > a{
+      background-color: #d07058;
+      color: #fff;
+    }
   }
 }

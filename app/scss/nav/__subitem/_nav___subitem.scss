@@ -27,6 +27,10 @@
     & > a{
       color: #fff;
     }
+    &:hover,
+    &:active{
+      background-color: #d07058;
+    }
   }
   &_important{
     font-weight: 700;
