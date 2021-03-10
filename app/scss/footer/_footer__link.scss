@@ -1,0 +1,13 @@
+.footer__link{
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+  font-size: rem($font-size_s, $base-font);
+  line-height: rem($line-height_m, $base-font);
+  color: #fff;
+  text-decoration: none;
+  &:hover,
+  &:active{
+    color: #ffbc9e;
+    border-color: rgba(255, 188, 158, .2);
+  }
+}

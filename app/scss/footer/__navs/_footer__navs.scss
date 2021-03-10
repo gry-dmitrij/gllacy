@@ -1,0 +1,8 @@
+.footer__navs{
+  max-height: rem(50px, $base-font);
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: column wrap;
+
+  list-style: none;
+}

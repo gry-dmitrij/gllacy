@@ -1,0 +1,14 @@
+.footer__nav_like{
+  position: relative;
+  font-weight: bold;
+  &:before{
+    content: "";
+    display: block;
+    width: 15px;
+    height: 13px;
+    position: absolute;
+    left: -22px;
+    top: 0;
+    background: center / contain no-repeat url("../img/icon/heat_ic.svg");
+  }
+}

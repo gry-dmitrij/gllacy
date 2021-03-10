@@ -220,7 +220,7 @@
     </ul>
   </section>
   <div class="container page__item">
-    <section class="about-section page__about-section">
+    <section class="about-section">
       <h2 class="about-section__title">
         Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес
       </h2>
@@ -280,7 +280,7 @@
     </address>
   </section>
 </main>
-<footer class="page-footer container">
+<footer class="page__footer container">
   <ul class="social-icons">
     <li class="social-icons__item">
       <a class="social-icon" href="#">
@@ -315,13 +315,18 @@
       </a>
     </li>
   </ul>
-  <ul class="footer-navs">
-    <li><a class="footer-nav" href="#">Для поставщиков</a></li>
-    <li><a class="footer-nav" href="#">Наши документы</a></li>
-    <li><a class="footer-nav" href="#">О производстве</a></li>
-    <li><a class="footer-nav" href="#">Экологические стандарты</a></li>
+  <ul class="footer__navs">
+    <li><a class="footer__link footer__nav footer__nav_like" href="#">Для поставщиков</a></li>
+    <li><a class="footer__link footer__nav" href="#">О производстве</a></li>
+    <li><a class="footer__link footer__nav" href="#">Наши документы</a></li>
+    <li><a class="footer__link footer__nav" href="#">Экологические стандарты</a></li>
   </ul>
-  <p class="footer-copyright">Сделано в HTML Academy &copy; 2017</p>
+  <div class="footer__copyright">
+    <svg height="38" width="118">
+      <use href="img/sprite/icon-sprite.svg#logo-academy"></use>
+    </svg>
+    <p>Сделано в <a class="footer__link" href="#">HTML Academy</a> &copy; 2017</p>
+  </div>
 </footer>
 <script>
     //only for IE

@@ -1,0 +1,15 @@
+.footer__copyright{
+  display: flex;
+  flex-flow: column;
+
+  font-size: rem(12px, $base-font);
+  line-height: rem(18px, $base-font);
+  color: #fefefe;
+
+  & svg{
+    margin-bottom: 8px;
+    width: 118px;
+    height: 38px;
+    fill: #fff;
+  }
+}

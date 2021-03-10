@@ -1,6 +1,8 @@
 .hits__button{
   margin-top: auto;
 
+  position: absolute;
+  top: calc(100% + 10px);
   visibility: hidden;
   .hits__item:hover > &{
     visibility: visible;
