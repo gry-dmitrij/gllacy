@@ -5,4 +5,13 @@
   flex-flow: column;
   align-items: center;
   position: relative;
+  &:before{
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 120%;
+    top: -13%;
+    background-image: radial-gradient(circle at center 320px, #cbf1dc 0, transparent 500px);
+    z-index: -1;
+  }
 }
