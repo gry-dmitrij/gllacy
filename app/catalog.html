@@ -11,7 +11,7 @@
     <a class="logo-img page-header__logo" href="index.html"><img src="img/Logo.svg" width="154" height="64" alt="Логотип gllacy shop"></a>
     <nav class="nav">
       <ul class="nav__list">
-        <li class="nav__item nav__item_active">
+        <li class="nav__item nav__item_active hover-parent">
           <a class="hover-sibling" href="#">Каталог</a>
           <div class="hover-visible nav__sublist-box">
             <ul class="nav__sublist">
@@ -33,10 +33,10 @@
             </ul>
           </div>
         </li>
-        <li class="nav__item">
+        <li class="nav__item hover-parent">
           <a href="#">Доставка и оплата</a>
         </li>
-        <li class="nav__item">
+        <li class="nav__item hover-parent">
           <a href="#">О&nbsp;Компании</a>
         </li>
       </ul>
@@ -150,6 +150,19 @@
     </section>
     <section>
       <h1 class="title">Сливочное мороженое</h1>
+      <form class="filter-box">
+        <h2 class="visually-hidden">Фильтр</h2>
+        <div class="filter">
+          <label for="sort-filter" class="filter__label">Сортировка</label>
+          <select name="sort-filter" id="sort-filter" class="filter__item">
+            <option value="popular">по популярности</option>
+            <option value="cheap">сначала недорогие</option>
+            <option value="expensive">сначала дорогие</option>
+            <option value="fat-content">по жирности</option>
+          </select>
+        </div>
+      </form>
+
       <ul class="products">
       <li class="products__item">
         <img class="products__img" src="img/product/creamy-orange-citrus.jpg" width="267" height="267" alt="">

@@ -1,4 +1,6 @@
 .slider-box__caption{
   position: absolute;
   bottom: rem(95px, 16);
+  left:50%;
+  transform: translateX(-50%);
 }

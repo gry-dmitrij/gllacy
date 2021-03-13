@@ -6,7 +6,9 @@
 
   padding: 26px 25px;
   position: absolute;
+  top: 50%;
   right: 28px;
+  transform: translateY(-50%);
 
   background: #fff;
   border-radius: 10px;

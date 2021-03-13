@@ -1,0 +1,16 @@
+.filter__item{
+  padding: 15px 50px 10px 15px;
+
+  background-color: rgba(248, 247, 244, 0.2);
+  font-size: rem(16px, $base-font);
+  line-height: rem(18px, $base-font);
+  font-weight: 500;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+
+  appearance: none;
+  &::-ms-expand{
+    display: none;
+  }
+}
