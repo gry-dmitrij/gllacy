@@ -1,5 +1,7 @@
 .filter__item{
-  padding: 15px 50px 10px 15px;
+  padding: 15px 15px 10px 15px;
+  min-height: rem(42px, $base-font);
+  box-sizing: border-box;
 
   background-color: rgba(248, 247, 244, 0.2);
   font-size: rem(16px, $base-font);
@@ -8,9 +10,10 @@
   color: #fff;
   border: none;
   border-radius: 20px;
+  outline: none;
 
-  appearance: none;
-  &::-ms-expand{
-    display: none;
+  &:hover,
+  &:focus{
+    color: $font-color-dark;
   }
 }

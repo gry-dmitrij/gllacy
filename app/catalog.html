@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/jquery-ui.min.css">
   <link rel="stylesheet" href="css/style.min.css">
   <title>Каталог</title>
 </head>
@@ -77,10 +78,7 @@
       <li class="user-icon user-icon_basket hover-parent">
         <a>
           <svg height="20" width="20">
-            <use href="img/sprite/icon-sprite.svg#basket-empty"></use>
-          </svg>
-          <svg class="visually-hidden" height="20" width="20">
-            <use href="img/sprite/icon-sprite.svg#basket-full"></use>
+            <use href="img/sprite/icon-sprite.svg#basket"></use>
           </svg>
           <span class="visually-hidden">Корзина</span>Пусто
         </a>
@@ -154,145 +152,151 @@
         <h2 class="visually-hidden">Фильтр</h2>
         <div class="filter">
           <label for="sort-filter" class="filter__label">Сортировка</label>
-          <select name="sort-filter" id="sort-filter" class="filter__item">
+          <select name="sort-filter" id="sort-filter" class="filter__item filter__item_select">
             <option value="popular">по популярности</option>
             <option value="cheap">сначала недорогие</option>
             <option value="expensive">сначала дорогие</option>
             <option value="fat-content">по жирности</option>
           </select>
         </div>
+        <div class="filter">
+          <label for="price-filter" class="filter__label">Цена: 100 - 500 руб.</label>
+          <div class="filter__item">
+            <div id="price-filter" class="filter__range"></div>
+          </div>
+        </div>
       </form>
 
       <ul class="products">
-      <li class="products__item">
-        <img class="products__img" src="img/product/creamy-orange-citrus.jpg" width="267" height="267" alt="">
-        <p class="products__desc">
-          <span class="products__price">310<span class="products__dimension">/кг</span></span>
-          Сливочное с апельсиновым джемом и цитрусовой стружкой
-        </p>
-        <button class="button products__button">Быстрый просмотр</button>
-      </li>
-      <li class="products__item">
-        <img class="products__img" src="img/product/creamy-coffee-chocolate.jpg" width="267" height="267" alt="">
-        <p class="products__desc">
-          <span class="products__price">380<span class="products__dimension">/кг</span></span>
-          Сливочно-кофейное с кусочками шоколада
-        </p>
-        <button class="button products__button">Быстрый просмотр</button>
-      </li>
-      <li class="products__item">
-        <img class="products__img" src="img/product/creamy-strawberry-white-chocolate.jpg" width="267" height="267" alt="">
-        <p class="products__desc">
-          <span class="products__price">355<span class="products__dimension">/кг</span></span>
-          Сливочно-клубничное с присыпкой из белого шоколада
-        </p>
-        <button class="button products__button">Быстрый просмотр</button>
-      </li>
-      <li class="products__item">
-        <img class="products__img" src="img/product/Creamy-brulee-caramel.jpg" width="267" height="267" alt="">
-        <p class="products__desc">
-          <span class="products__price">415<span class="products__dimension">/кг</span></span>
-          Сливочное крем-брюле с карамельной подливкой
-        </p>
-        <button class="button products__button">Быстрый просмотр</button>
-      </li>
-      <li class="products__item">
-        <img class="products__img" src="img/product/creamy-orange-citrus.jpg" width="267" height="267" alt="">
-        <p class="products__desc">
-          <span class="products__price">310<span class="products__dimension">/кг</span></span>
-          Сливочное с апельсиновым джемом и цитрусовой стружкой
-        </p>
-        <button class="button products__button">Быстрый просмотр</button>
-      </li>
-      <li class="products__item">
-        <img class="products__img" src="img/product/creamy-coffee-chocolate.jpg" width="267" height="267" alt="">
-        <p class="products__desc">
-          <span class="products__price">380<span class="products__dimension">/кг</span></span>
-          Сливочно-кофейное с кусочками шоколада
-        </p>
-        <button class="button products__button">Быстрый просмотр</button>
-      </li>
-      <li class="products__item">
-        <img class="products__img" src="img/product/creamy-strawberry-white-chocolate.jpg" width="267" height="267" alt="">
-        <p class="products__desc">
-          <span class="products__price">355<span class="products__dimension">/кг</span></span>
-          Сливочно-клубничное с присыпкой из белого шоколада
-        </p>
-        <button class="button products__button">Быстрый просмотр</button>
-      </li>
-      <li class="products__item">
-        <img class="products__img" src="img/product/Creamy-brulee-caramel.jpg" width="267" height="267" alt="">
-        <p class="products__desc">
-          <span class="products__price">415<span class="products__dimension">/кг</span></span>
-          Сливочное крем-брюле с карамельной подливкой
-        </p>
-        <button class="button products__button">Быстрый просмотр</button>
-      </li>
-      <li class="products__item">
-        <img class="products__img" src="img/product/creamy-orange-citrus.jpg" width="267" height="267" alt="">
-        <p class="products__desc">
-          <span class="products__price">310<span class="products__dimension">/кг</span></span>
-          Сливочное с апельсиновым джемом и цитрусовой стружкой
-        </p>
-        <button class="button products__button">Быстрый просмотр</button>
-      </li>
-      <li class="products__item">
-        <img class="products__img" src="img/product/creamy-coffee-chocolate.jpg" width="267" height="267" alt="">
-        <p class="products__desc">
-          <span class="products__price">380<span class="products__dimension">/кг</span></span>
-          Сливочно-кофейное с кусочками шоколада
-        </p>
-        <button class="button products__button">Быстрый просмотр</button>
-      </li>
-      <li class="products__item">
-        <img class="products__img" src="img/product/creamy-strawberry-white-chocolate.jpg" width="267" height="267" alt="">
-        <p class="products__desc">
-          <span class="products__price">355<span class="products__dimension">/кг</span></span>
-          Сливочно-клубничное с присыпкой из белого шоколада
-        </p>
-        <button class="button products__button">Быстрый просмотр</button>
-      </li>
-      <li class="products__item">
-        <img class="products__img" src="img/product/Creamy-brulee-caramel.jpg" width="267" height="267" alt="">
-        <p class="products__desc">
-          <span class="products__price">415<span class="products__dimension">/кг</span></span>
-          Сливочное крем-брюле с карамельной подливкой
-        </p>
-        <button class="button products__button">Быстрый просмотр</button>
-      </li>
-      <li class="products__item">
-        <img class="products__img" src="img/product/creamy-orange-citrus.jpg" width="267" height="267" alt="">
-        <p class="products__desc">
-          <span class="products__price">310<span class="products__dimension">/кг</span></span>
-          Сливочное с апельсиновым джемом и цитрусовой стружкой
-        </p>
-        <button class="button products__button">Быстрый просмотр</button>
-      </li>
-      <li class="products__item">
-        <img class="products__img" src="img/product/creamy-coffee-chocolate.jpg" width="267" height="267" alt="">
-        <p class="products__desc">
-          <span class="products__price">380<span class="products__dimension">/кг</span></span>
-          Сливочно-кофейное с кусочками шоколада
-        </p>
-        <button class="button products__button">Быстрый просмотр</button>
-      </li>
-      <li class="products__item">
-        <img class="products__img" src="img/product/creamy-strawberry-white-chocolate.jpg" width="267" height="267" alt="">
-        <p class="products__desc">
-          <span class="products__price">355<span class="products__dimension">/кг</span></span>
-          Сливочно-клубничное с присыпкой из белого шоколада
-        </p>
-        <button class="button products__button">Быстрый просмотр</button>
-      </li>
-      <li class="products__item">
-        <img class="products__img" src="img/product/Creamy-brulee-caramel.jpg" width="267" height="267" alt="">
-        <p class="products__desc">
-          <span class="products__price">415<span class="products__dimension">/кг</span></span>
-          Сливочное крем-брюле с карамельной подливкой
-        </p>
-        <button class="button products__button">Быстрый просмотр</button>
-      </li>
-    </ul>
+        <li class="products__item">
+          <img class="products__img" src="img/product/creamy-orange-citrus.jpg" width="267" height="267" alt="">
+          <p class="products__desc">
+            <span class="products__price">310<span class="products__dimension">/кг</span></span>
+            Сливочное с апельсиновым джемом и цитрусовой стружкой
+          </p>
+          <button class="button products__button">Быстрый просмотр</button>
+        </li>
+        <li class="products__item">
+          <img class="products__img" src="img/product/creamy-coffee-chocolate.jpg" width="267" height="267" alt="">
+          <p class="products__desc">
+            <span class="products__price">380<span class="products__dimension">/кг</span></span>
+            Сливочно-кофейное с кусочками шоколада
+          </p>
+          <button class="button products__button">Быстрый просмотр</button>
+        </li>
+        <li class="products__item">
+          <img class="products__img" src="img/product/creamy-strawberry-white-chocolate.jpg" width="267" height="267" alt="">
+          <p class="products__desc">
+            <span class="products__price">355<span class="products__dimension">/кг</span></span>
+            Сливочно-клубничное с присыпкой из белого шоколада
+          </p>
+          <button class="button products__button">Быстрый просмотр</button>
+        </li>
+        <li class="products__item">
+          <img class="products__img" src="img/product/Creamy-brulee-caramel.jpg" width="267" height="267" alt="">
+          <p class="products__desc">
+            <span class="products__price">415<span class="products__dimension">/кг</span></span>
+            Сливочное крем-брюле с карамельной подливкой
+          </p>
+          <button class="button products__button">Быстрый просмотр</button>
+        </li>
+        <li class="products__item">
+          <img class="products__img" src="img/product/creamy-orange-citrus.jpg" width="267" height="267" alt="">
+          <p class="products__desc">
+            <span class="products__price">310<span class="products__dimension">/кг</span></span>
+            Сливочное с апельсиновым джемом и цитрусовой стружкой
+          </p>
+          <button class="button products__button">Быстрый просмотр</button>
+        </li>
+        <li class="products__item">
+          <img class="products__img" src="img/product/creamy-coffee-chocolate.jpg" width="267" height="267" alt="">
+          <p class="products__desc">
+            <span class="products__price">380<span class="products__dimension">/кг</span></span>
+            Сливочно-кофейное с кусочками шоколада
+          </p>
+          <button class="button products__button">Быстрый просмотр</button>
+        </li>
+        <li class="products__item">
+          <img class="products__img" src="img/product/creamy-strawberry-white-chocolate.jpg" width="267" height="267" alt="">
+          <p class="products__desc">
+            <span class="products__price">355<span class="products__dimension">/кг</span></span>
+            Сливочно-клубничное с присыпкой из белого шоколада
+          </p>
+          <button class="button products__button">Быстрый просмотр</button>
+        </li>
+        <li class="products__item">
+          <img class="products__img" src="img/product/Creamy-brulee-caramel.jpg" width="267" height="267" alt="">
+          <p class="products__desc">
+            <span class="products__price">415<span class="products__dimension">/кг</span></span>
+            Сливочное крем-брюле с карамельной подливкой
+          </p>
+          <button class="button products__button">Быстрый просмотр</button>
+        </li>
+        <li class="products__item">
+          <img class="products__img" src="img/product/creamy-orange-citrus.jpg" width="267" height="267" alt="">
+          <p class="products__desc">
+            <span class="products__price">310<span class="products__dimension">/кг</span></span>
+            Сливочное с апельсиновым джемом и цитрусовой стружкой
+          </p>
+          <button class="button products__button">Быстрый просмотр</button>
+        </li>
+        <li class="products__item">
+          <img class="products__img" src="img/product/creamy-coffee-chocolate.jpg" width="267" height="267" alt="">
+          <p class="products__desc">
+            <span class="products__price">380<span class="products__dimension">/кг</span></span>
+            Сливочно-кофейное с кусочками шоколада
+          </p>
+          <button class="button products__button">Быстрый просмотр</button>
+        </li>
+        <li class="products__item">
+          <img class="products__img" src="img/product/creamy-strawberry-white-chocolate.jpg" width="267" height="267" alt="">
+          <p class="products__desc">
+            <span class="products__price">355<span class="products__dimension">/кг</span></span>
+            Сливочно-клубничное с присыпкой из белого шоколада
+          </p>
+          <button class="button products__button">Быстрый просмотр</button>
+        </li>
+        <li class="products__item">
+          <img class="products__img" src="img/product/Creamy-brulee-caramel.jpg" width="267" height="267" alt="">
+          <p class="products__desc">
+            <span class="products__price">415<span class="products__dimension">/кг</span></span>
+            Сливочное крем-брюле с карамельной подливкой
+          </p>
+          <button class="button products__button">Быстрый просмотр</button>
+        </li>
+        <li class="products__item">
+          <img class="products__img" src="img/product/creamy-orange-citrus.jpg" width="267" height="267" alt="">
+          <p class="products__desc">
+            <span class="products__price">310<span class="products__dimension">/кг</span></span>
+            Сливочное с апельсиновым джемом и цитрусовой стружкой
+          </p>
+          <button class="button products__button">Быстрый просмотр</button>
+        </li>
+        <li class="products__item">
+          <img class="products__img" src="img/product/creamy-coffee-chocolate.jpg" width="267" height="267" alt="">
+          <p class="products__desc">
+            <span class="products__price">380<span class="products__dimension">/кг</span></span>
+            Сливочно-кофейное с кусочками шоколада
+          </p>
+          <button class="button products__button">Быстрый просмотр</button>
+        </li>
+        <li class="products__item">
+          <img class="products__img" src="img/product/creamy-strawberry-white-chocolate.jpg" width="267" height="267" alt="">
+          <p class="products__desc">
+            <span class="products__price">355<span class="products__dimension">/кг</span></span>
+            Сливочно-клубничное с присыпкой из белого шоколада
+          </p>
+          <button class="button products__button">Быстрый просмотр</button>
+        </li>
+        <li class="products__item">
+          <img class="products__img" src="img/product/Creamy-brulee-caramel.jpg" width="267" height="267" alt="">
+          <p class="products__desc">
+            <span class="products__price">415<span class="products__dimension">/кг</span></span>
+            Сливочное крем-брюле с карамельной подливкой
+          </p>
+          <button class="button products__button">Быстрый просмотр</button>
+        </li>
+      </ul>
     </section>
   </main>
   <footer class="page__footer container">
@@ -350,6 +354,9 @@
     }
   </script>
   <!-- Если браузер не поддерживает :focus-within -->
-  <script src="js/focus-within-polyfill.js"></script>
+  <script defer src="js/focus-within-polyfill.js"></script>
+  <script defer src="js/jquery-3.6.0.min.js"></script>
+  <script defer src="js/jquery-ui.min.js"></script>
+  <script defer src="js/filter.js"></script>
 </body>
 </html>

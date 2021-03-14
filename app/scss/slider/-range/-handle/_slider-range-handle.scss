@@ -1,0 +1,19 @@
+.slider-range .slider-range-handle{
+  width: 4px;
+  height: 4px;
+
+  top: rem(-10px, $base-font);
+
+  background-color: #ababab;
+  border-radius: 50%;
+  border: 10px solid #fff;
+
+  outline: none;
+
+  &:focus{
+    box-shadow: 0 0 0 2px #fff;
+  }
+  &:hover{
+    cursor: pointer;
+  }
+}

@@ -14,17 +14,17 @@
   font-size: (14em / 16);
   line-height: 1em;
   border-radius: 16px;
-  &:hover,
+  &.focus-within,
+  &:hover{
+    background-color: $light-bg-color;
+    color: #000;
+  }
   &:focus-within{
     background-color: $light-bg-color;
     color: #000;
   }
-  &.focus-within{
-    background-color: $light-bg-color;
-    color: #000;
-  }
   svg{
-    fill: currentColor;
+    fill: transparent;
     margin-right: 8px;
   }
   & > a{
@@ -53,6 +53,11 @@
     svg{
       width: 21px;
       height: 20px;
+    }
+    &_full{
+      svg{
+        fill: #e84d37;
+      }
     }
   }
 }

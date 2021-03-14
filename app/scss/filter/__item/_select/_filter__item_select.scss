@@ -1,0 +1,18 @@
+.filter__item_select{
+  padding-right: 50px;
+  position: relative;
+  appearance: none;
+  // для IE11
+  &::-ms-expand{
+    display: none;
+  }
+  background-image: url("../img/icon/down-arrow_ic.svg");
+  background-position: center right 10px;
+  background-size: 11px 10px;
+  background-repeat: no-repeat;
+
+  &:hover,
+  &:focus{
+    background-image: url("../img/icon/down-arrow-hover_ic.svg");
+  }
+}
