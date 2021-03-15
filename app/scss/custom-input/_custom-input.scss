@@ -1,0 +1,10 @@
+.custom-input{
+  padding-left: 25px;
+  position: relative;
+  span{
+    font-size: rem(16px, $base-font);
+    line-height: rem(18px, $base-font);
+    font-weight: 500;
+    color: #fff;
+  }
+}
