@@ -139,14 +139,14 @@
     </p>
   </header>
   <main>
-    <section>
+    <section class="container page__breadcrumb">
       <ul class="breadcrumb">
         <li class="breadcrumb__item"><a href="index.html">Главная</a></li>
         <li class="breadcrumb__item"><a href="#">Каталог</a></li>
         <li class="breadcrumb__item breadcrumb__item_current"><a>Сливочное</a></li>
       </ul>
     </section>
-    <section>
+    <section class="container page__filters">
       <h1 class="title">Сливочное мороженое</h1>
       <form class="filter-box">
         <h2 class="visually-hidden">Фильтр</h2>
@@ -167,7 +167,7 @@
         </div>
         <div class="filter filter-box__item">
           <label for="fat-content2" class="filter__label">Жирность:</label>
-          <div class="filter__item">
+          <div class="filter__item filter__item_radio">
             <label class="custom-input custom-input_radio">
               <input class="visually-hidden" type="radio" name="fat-content" id="fat-content1">
               <span>0%</span>
@@ -188,7 +188,7 @@
         </div>
         <div class="filter filter-box__item">
           <label for="fat-content2" class="filter__label">Наполнители:</label>
-          <div class="filter__item">
+          <div class="filter__item filter__item_checkbox">
             <label class="custom-input custom-input_checkbox">
               <input type="checkbox" class="visually-hidden">
               <span>шоколадные</span>
@@ -211,42 +211,10 @@
             </label>
           </div>
         </div>
-        <button class="transparent-button">Применить</button>
+        <button class="transparent-button filter__button">Применить</button>
       </form>
 
       <ul class="products">
-        <li class="products__item">
-          <img class="products__img" src="img/product/creamy-orange-citrus.jpg" width="267" height="267" alt="">
-          <p class="products__desc">
-            <span class="products__price">310<span class="products__dimension">/кг</span></span>
-            Сливочное с апельсиновым джемом и цитрусовой стружкой
-          </p>
-          <button class="button products__button">Быстрый просмотр</button>
-        </li>
-        <li class="products__item">
-          <img class="products__img" src="img/product/creamy-coffee-chocolate.jpg" width="267" height="267" alt="">
-          <p class="products__desc">
-            <span class="products__price">380<span class="products__dimension">/кг</span></span>
-            Сливочно-кофейное с кусочками шоколада
-          </p>
-          <button class="button products__button">Быстрый просмотр</button>
-        </li>
-        <li class="products__item">
-          <img class="products__img" src="img/product/creamy-strawberry-white-chocolate.jpg" width="267" height="267" alt="">
-          <p class="products__desc">
-            <span class="products__price">355<span class="products__dimension">/кг</span></span>
-            Сливочно-клубничное с присыпкой из белого шоколада
-          </p>
-          <button class="button products__button">Быстрый просмотр</button>
-        </li>
-        <li class="products__item">
-          <img class="products__img" src="img/product/Creamy-brulee-caramel.jpg" width="267" height="267" alt="">
-          <p class="products__desc">
-            <span class="products__price">415<span class="products__dimension">/кг</span></span>
-            Сливочное крем-брюле с карамельной подливкой
-          </p>
-          <button class="button products__button">Быстрый просмотр</button>
-        </li>
         <li class="products__item">
           <img class="products__img" src="img/product/creamy-orange-citrus.jpg" width="267" height="267" alt="">
           <p class="products__desc">

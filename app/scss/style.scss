@@ -12,7 +12,9 @@
 @import "container/**/*.scss";
 @import "custom-input/**/*.scss";
 @import "edit/**/*.scss";
-@import "filter/**/*.scss";
+@import "filter/**/!(*_*_*).scss";    // блоки (не содержат два подчеркивания)
+@import "filter/**/*__+([!_]).scss";  // элементы (только двойное подчерк)
+@import "filter/**/*+(__*_)*.scss";   //модификаторы (двойное + одинарное)
 @import "form/**/*.scss";
 @import "footer/**/*.scss";
 @import "header/**/*.scss";
