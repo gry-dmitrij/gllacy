@@ -150,7 +150,7 @@
       <h1 class="title">Сливочное мороженое</h1>
       <form class="filter-box">
         <h2 class="visually-hidden">Фильтр</h2>
-        <div class="filter">
+        <div class="filter filter-box__item">
           <label for="sort-filter" class="filter__label">Сортировка</label>
           <select name="sort-filter" id="sort-filter" class="filter__item filter__item_select">
             <option value="popular">по популярности</option>
@@ -159,33 +159,59 @@
             <option value="fat-content">по жирности</option>
           </select>
         </div>
-        <div class="filter">
+        <div class="filter filter-box__item">
           <label for="price-filter" class="filter__label">Цена: 100 - 500 руб.</label>
           <div class="filter__item">
             <div id="price-filter" class="filter__range"></div>
           </div>
         </div>
-        <div class="filter">
+        <div class="filter filter-box__item">
           <label for="fat-content2" class="filter__label">Жирность:</label>
           <div class="filter__item">
-            <label for="fat-content1" class="custom-input custom-input_radio">
+            <label class="custom-input custom-input_radio">
               <input class="visually-hidden" type="radio" name="fat-content" id="fat-content1">
               <span>0%</span>
             </label>
-            <label for="fat-content2" class="custom-input custom-input_radio">
+            <label class="custom-input custom-input_radio">
               <input class="visually-hidden" type="radio" name="fat-content" id="fat-content2" checked>
               <span>до 10%</span>
             </label>
-            <label for="fat-content3" class="custom-input custom-input_radio">
+            <label class="custom-input custom-input_radio">
               <input class="visually-hidden" type="radio" name="fat-content" id="fat-content3">
               <span>до 30%</span>
             </label>
-            <label for="fat-content4" class="custom-input custom-input_radio">
+            <label class="custom-input custom-input_radio">
               <input class="visually-hidden" type="radio" name="fat-content" id="fat-content4">
               <span>выше 30%</span>
             </label>
           </div>
         </div>
+        <div class="filter filter-box__item">
+          <label for="fat-content2" class="filter__label">Наполнители:</label>
+          <div class="filter__item">
+            <label class="custom-input custom-input_checkbox">
+              <input type="checkbox" class="visually-hidden">
+              <span>шоколадные</span>
+            </label>
+            <label class="custom-input custom-input_checkbox">
+              <input type="checkbox" class="visually-hidden">
+              <span>сахарные присыпки</span>
+            </label>
+            <label class="custom-input custom-input_checkbox">
+              <input type="checkbox" class="visually-hidden">
+              <span>фрукты</span>
+            </label>
+            <label class="custom-input custom-input_checkbox">
+              <input type="checkbox" class="visually-hidden">
+              <span>сиропы</span>
+            </label>
+            <label class="custom-input custom-input_checkbox">
+              <input type="checkbox" class="visually-hidden">
+              <span>джемы</span>
+            </label>
+          </div>
+        </div>
+        <button class="transparent-button">Применить</button>
       </form>
 
       <ul class="products">
@@ -318,6 +344,20 @@
           <button class="button products__button">Быстрый просмотр</button>
         </li>
       </ul>
+      <div class="pagination single">
+          <button class="pagination__btn pagination__btn_prev"></button>
+          <ul class="pagination__list">
+            <li class="cur-page"><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li class="no-margin"><a href="#">6</a></li>
+            <li class="no-margin">....</li>
+            <li><a href="#">20</a></li>
+          </ul>
+          <button class="pagination__btn pagination__btn_next"></button>
+        </div>
     </section>
   </main>
   <footer class="page__footer container">

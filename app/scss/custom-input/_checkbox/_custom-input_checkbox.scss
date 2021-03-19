@@ -1,0 +1,19 @@
+.custom-input_checkbox{
+  padding-left: 35px;
+  span:before{
+    content: "";
+    width: 27px;
+    height: 23px;
+    display: block;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: top left no-repeat url("../img/icon/checkbox.svg#check-off");
+  }
+
+  input:checked ~ span:before{
+    background: top left no-repeat url("../img/icon/checkbox.svg#check-on");
+    left: 2px;
+  }
+}

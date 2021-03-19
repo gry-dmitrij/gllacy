@@ -1,0 +1,26 @@
+.pagination__btn{
+	width: 8px;
+	height: 12px;
+	background: center / contain no-repeat;
+	border: none;
+	outline: none;
+	cursor: pointer;
+  color: #fff;
+  font-size: 14px;
+  line-height: 16px;
+	&:hover{
+	}
+	&:active{
+	}
+  &_prev{
+    background: top left no-repeat url("../img/icon/pagination-btn.svg");
+    transform: scaleX(-1);
+  }
+  &_next{
+    background: left top no-repeat url("../img/icon/pagination-btn.svg");
+  }
+  &_no-active{
+    opacity: 0.2;
+  }
+}
+
