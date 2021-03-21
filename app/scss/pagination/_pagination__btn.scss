@@ -13,10 +13,12 @@
 	&:active{
 	}
   &_prev{
+    margin-right: 13px;
     background: top left no-repeat url("../img/icon/pagination-btn.svg");
     transform: scaleX(-1);
   }
   &_next{
+    margin-left: 13px;
     background: left top no-repeat url("../img/icon/pagination-btn.svg");
   }
   &_no-active{
