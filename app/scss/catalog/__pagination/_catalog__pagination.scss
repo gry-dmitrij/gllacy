@@ -1,0 +1,18 @@
+.catalog__pagination{
+  $offset: 27px;
+  margin-bottom: 18px;
+  position: relative;
+  &:after{
+    content: "";
+    display: block;
+    width: calc(100% - #{$offset * 2});
+    height: 1px;
+
+    position: absolute;
+    left: $offset;
+    bottom: -17px;
+
+    background-color: #fff;
+    opacity: 0.3;
+  }
+}

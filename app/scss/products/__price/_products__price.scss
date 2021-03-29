@@ -2,7 +2,7 @@
   display: block;
 
   position: absolute;
-  top: -70px;
+  top: -73px;
   left: 0;
 
   font-size: rem(45px, $base-font);
@@ -10,4 +10,28 @@
   font-weight: 700;
   color: #fff;
   text-shadow: 0.5px 0.9px 3px rgba(49, 50, 53, 0.5);
+
+  &:before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: rem(26px, $base-font);
+    height: rem(37px, $base-font);
+    left: rem(83px, $base-font);
+    bottom: 5px;
+    font-size: rem(30px, $base-font);
+    fill: currentColor;
+    background: center / cover no-repeat url("../img/symbol/ruble.svg");
+  }
+  &:after{
+    content: "/кг";
+    display: block;
+    position: absolute;
+    width: rem(65px, $base-font);
+    height: rem(37px, $base-font);
+    left: rem(100px, $base-font);
+    bottom: 3px;
+    color: currentColor;
+    font-size: rem(30px, $base-font);
+  }
 }

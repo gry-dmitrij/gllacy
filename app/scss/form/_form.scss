@@ -1,4 +1,5 @@
 .form{
+  position: relative;
   box-sizing: border-box;
   background-color: $light-bg-color;
   box-shadow: $general-shadow;
@@ -20,4 +21,10 @@
 
 .form_cart{
   padding: 20px 15px;
+}
+
+.form_feedback{
+  display: flex;
+  flex-flow: column;
+  padding: 20px 25px;
 }

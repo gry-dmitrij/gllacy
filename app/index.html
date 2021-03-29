@@ -185,7 +185,7 @@
       <li class="products__item products__item_hit">
         <img class="products__img" src="img/product/creamy-orange-citrus.jpg" width="267" height="267" alt="">
         <p class="products__desc">
-          <span class="products__price">310<span class="products__dimension">/кг</span></span>
+          <span class="products__price">310</span>
           Сливочное с апельсиновым джемом и цитрусовой стружкой
         </p>
         <button class="button products__button">Быстрый просмотр</button>
@@ -193,7 +193,7 @@
       <li class="products__item products__item_hit">
         <img class="products__img" src="img/product/creamy-coffee-chocolate.jpg" width="267" height="267" alt="">
         <p class="products__desc">
-          <span class="products__price">380<span class="products__dimension">/кг</span></span>
+          <span class="products__price">380</span>
           Сливочно-кофейное с кусочками шоколада
         </p>
         <button class="button products__button">Быстрый просмотр</button>
@@ -201,7 +201,7 @@
       <li class="products__item products__item_hit">
         <img class="products__img" src="img/product/creamy-strawberry-white-chocolate.jpg" width="267" height="267" alt="">
         <p class="products__desc">
-          <span class="products__price">355<span class="products__dimension">/кг</span></span>
+          <span class="products__price">355</span>
           Сливочно-клубничное с присыпкой из белого шоколада
         </p>
         <button class="button products__button">Быстрый просмотр</button>
@@ -209,7 +209,7 @@
       <li class="products__item products__item_hit">
         <img class="products__img" src="img/product/Creamy-brulee-caramel.jpg" width="267" height="267" alt="">
         <p class="products__desc">
-          <span class="products__price">415<span class="products__dimension">/кг</span></span>
+          <span class="products__price">415</span>
           Сливочное крем-брюле с карамельной подливкой
         </p>
         <button class="button products__button">Быстрый просмотр</button>
@@ -325,6 +325,16 @@
     <p>Сделано в <a class="footer__link" href="#">HTML Academy</a> &copy; 2017</p>
   </div>
 </footer>
+<div class="page__feedback-box visually-hidden">
+  <form action="#" class="form form_feedback page__feedback-form">
+    <b class="form__caption">Мы обязательно вам ответим!</b>
+    <input type="text" class="edit form__edit form__edit_feedback" placeholder="Как вас зовут?">
+    <input type="text" class="edit form__edit form__edit_feedback" placeholder="Ваша почта для ответа?">
+    <textarea name="" id="" cols="30" rows="6" class="edit" placeholder="Напишите что-нибудь..."></textarea>
+    <button id="feedback-submit-btn" class="button form__feedback-btn">Отправить</button>
+    <button id="feedback-close-btn" type="button" class="button-icon form__close-btn"></button>
+  </form>
+</div>
 <script>
     //only for IE
     if(/MSIE \d|Trident.*rv/.test(navigator.userAgent)){
@@ -333,5 +343,6 @@
   </script>
   <!-- Если браузер не поддерживает :focus-within -->
   <script src="js/focus-within-polyfill.js"></script>
+  <script src="js/feedback-form.js"></script>
 </body>
 </html>
